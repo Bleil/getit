@@ -1,0 +1,47 @@
+@import './fonts';
+@import './colors';
+
+getit-main {
+    .banner {
+        width: 100%;
+        max-height: 621px;
+        height: 85vh;
+        background-image: url('images/desktop/bg_main.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            padding: 0 24px;
+            box-sizing: border-box;
+            font-family: $montserrat;
+            font-weight: $extra_light;
+            color: $white;
+            font-size: 38px;
+            margin-bottom: 70px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .banner {
+            button {
+                width: calc(100% - 24px);
+                padding: 16px 8px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .banner {
+            background-image: url('images/mobile/bg_main.jpg');
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import './fonts';
+@import './colors';
+
+getit-navbar-mobile {
+    display: none;
+
+    header {
+        width: 100%;
+        height: 80px;
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        box-sizing: border-box;
+        border-bottom: 1px solid $light_gray;
+        z-index: 999;
+        justify-content: space-between;
+
+        &.open {
+            border: none;
+            &:before {
+                content : "";
+                width: calc(100% - 104px);
+                height: 1px;
+                position: absolute;
+                left    : 0;
+                bottom  : 0;
+                border-bottom: 1px solid $black;
+            }
+
+            .sub-menu {
+                display: block;
+            }
+        }
+
+        img {
+            max-height: 40px;
+        }
+
+        button {
+            width: 80px;
+            height: 80px;
+            background-color: $white;
+            border: none;
+            background-image: url('images/mobile/menu.png');
+            background-size: 60%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-bottom: 1px solid $light_gray;
+            cursor: pointer;
+
+            &.open {
+                background-image: url('images/mobile/close_menu.png');
+                border: none;
+                border-left: 1px solid $black;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .sub-menu {
+            width: 100%;
+            background-color: $white;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            display: none;
+
+            ul {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                list-style: none;
+
+                li {
+                    width: 100%;
+                    height: 60px;
+                    padding: 0 24px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-family: $montserrat;
+                    font-weight: $bold;
+                    border-bottom: 1px solid $black;
+
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+getit-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+
+    &.open {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    getit-navbar-mobile {
+        display: flex;
+    }
+}

@@ -1,0 +1,197 @@
+@import './fonts';
+@import './colors';
+
+getit-customers {
+    .container {
+        width: 100%;
+        margin-top: 50px;
+        padding: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid $light_gray;
+
+        .title {
+            width: 470px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                width: 260px;
+                font-family: $montserrat;
+                text-transform: uppercase;
+                font-weight: $extra_light;
+                font-size: 120px;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                span {
+                    width: 100%;
+
+                    &:not(:first-child) {
+                        text-align: right;
+                    }
+
+                    &:last-child {
+                        text-align: left;
+                    }
+                }
+
+                hr {
+                    width: 280px;
+                    position: absolute;
+                    bottom: 80px;
+                    left: 225px;
+                    transform: rotate(-50deg);
+                    display: block;
+                    height: 1px;
+                    border: 0;
+                    border-top: 3px solid $light_gray;
+                    padding: 0; 
+                }
+            }            
+        }
+
+        .customers {
+            width: calc(100% - 470px);
+            display: flex;
+            align-items: flex-end;
+
+            .carousel-container {
+                width: 100%;
+                height: 430px;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    img {
+                        width: 128px;
+                        height: 256px;
+                    }
+
+                    &.previous {
+                        left: 16px;
+
+                        img {
+                            transform: rotate(180deg);
+                            display: none;
+                        }
+                    }
+
+                    &.next {
+                        right: 16px;
+                    }
+                }
+
+                .carousel {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .item {
+                        outline: none;
+    
+                        img {
+                            max-width: 350px;
+                            max-height: 350px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1130px) {
+        .container {
+            padding: 50px 24px;
+    
+            .title {
+                width: 100%;
+                justify-content: center;
+
+                h1 {
+                    margin: 0 auto;
+                }
+            }
+    
+            .customers {
+                width: 100%;
+    
+                .carousel-container {
+                    button {
+                        &.previous {
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 780px) {
+        .container {
+            .title {
+                h1 {
+                    hr {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 678px) {
+        .container {
+            padding: 24px 16px;
+
+            .customers {
+                .carousel-container {
+                    button {
+                        &.previous {
+                            left: 0;
+                        }
+    
+                        &.next {
+                            right: 0;
+                        }
+
+                        img {
+                            max-width: 80px;
+                        }
+                    }
+
+                    .carousel {
+                        .item {
+                            outline: none;
+        
+                            img {
+                                max-width: 250px;
+                                max-height: 250px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

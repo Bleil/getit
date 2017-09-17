@@ -1,0 +1,229 @@
+@import './fonts';
+@import './colors';
+
+getit-contact {
+    .container {
+        width: 100%;
+        margin-top: 50px;
+        padding: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+            h1 {
+                width: 505px;
+                position: relative;
+                font-family: $montserrat;
+                text-transform: uppercase;
+                font-weight: $extra_light;
+                font-size: 120px;
+                padding: 0;
+                margin: 0 0 100px 0;
+    
+                span:last-child {
+                    position: absolute;
+                    margin-top: 100px;
+                    margin-left: -140px;
+                }
+            }
+
+            &.mobile {
+                display: none;
+            }
+        }
+
+        .form-container {
+            width: 400px;
+            padding: 0 50px 0 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            form {
+                width: 100%;
+                border: 1px solid $light_gray;
+                padding: 16px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+
+                input, textarea {
+                    font-family: $montserrat;
+                    font-weight: $extra_light;
+                    font-size: 20px;
+                    padding: 24px 16px;
+                    box-sizing: border-box;
+                }
+
+                input:not(:first-child), textarea, button {
+                    margin-top: 16px;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 16px 0;
+                }
+            }
+        }
+
+        .infos {
+            width: calc(100% - 400px);
+
+            .title {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 132px;
+
+                h1 {
+                    width: 505px;
+                    position: relative;
+                    font-family: $montserrat;
+                    text-transform: uppercase;
+                    font-weight: $extra_light;
+                    font-size: 120px;
+                    padding: 0;
+                    margin: 0 0 100px 0;
+        
+                    span:last-child {
+                        position: absolute;
+                        margin-top: 100px;
+                        margin-left: -140px;
+                    }
+                }
+            }
+
+            .map {
+                width: 100%;
+                height: 450px;  
+                border: 1px solid $light_gray;
+            }
+
+            p {
+                margin: 8px 0;
+                padding: 0;
+                font-size: 22px;
+                font-family: $montserrat;
+                color: $gray;
+                font-weight: $extra_light;
+
+                &:first-of-type {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+
+    .decoration {
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 2px solid $light_gray;
+            margin: 1em 0;
+            padding: 0; 
+        }
+    }
+
+    @media only screen and (max-width: 1276px) {
+        .container {
+            .infos {
+                .title {
+                    margin-bottom: 157px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .container {
+            padding: 24px;
+
+            .title {
+                width: 100%;
+    
+                &.mobile {
+                    display: flex;
+                }
+            }
+    
+            .form-container {
+                width: 100%;
+                padding: 0;
+            }
+    
+            .infos {
+                width: 100%;
+                margin-top: 50px;
+
+                .title {
+                    display: none;
+                }
+            }
+        }
+
+        .decoration {
+            padding: 0 24px;
+        }
+    }
+
+    @media only screen and (max-width: 625px) {
+        .container {
+            .title {
+                h1 {
+                    width: 400px;
+                    font-size: 100px;
+
+                    span:last-child {
+                        margin-left: -117px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 530px) {
+        .container {
+            .title {
+                h1 {
+                    width: 335px;
+                    font-size: 80px;
+
+                    span:last-child {
+                        margin-top: 70px;
+                        margin-left: -94px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .container {
+            .title {
+                margin-bottom: 24px;
+                h1 {
+                    width: 250px;
+                    font-size: 60px;
+
+                    span:last-child {
+                        margin-top: 60px;
+                        margin-left: -70px;
+                    }
+                }
+            }
+        }
+    }
+}

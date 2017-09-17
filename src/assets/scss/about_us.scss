@@ -1,0 +1,145 @@
+@import './fonts';
+@import './colors';
+
+getit-about-us {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url('images/desktop/bg_about_us.png');
+        background-repeat: no-repeat;
+
+        .info {
+            width: 50%;
+            padding: 48px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                width: 585px;
+                position: relative;
+                font-family: $montserrat;
+                text-transform: uppercase;
+                font-weight: $extra_light;
+                font-size: 120px;
+                padding: 0;
+                margin: 0 0 100px 0;
+    
+                span:last-child {
+                    position: absolute;
+                    margin-top: 100px;
+                    margin-left: -100px;
+                }
+            }
+
+            p {
+                max-width: 90%;
+                margin: 48px 0 0 0;
+                text-align: left;
+                font-family: $montserrat;
+                font-size: 26px;
+                font-weight: $extra_light;
+                color: $gray;
+            }
+
+            button {
+                margin-top: 48px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .container {
+            .info {
+                width: 60%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1080px) {
+        .container {
+            background-image: url('images/mobile/bg_about_us.png');
+            justify-content: flex-end;
+            background-size: 100%;
+
+            .info {
+                width: 80%;
+                padding: 0 24px;
+                margin-top: 350px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            .info {
+                width: 100%;
+
+                h1 {
+                    width: 100%;
+                }
+            }
+        }   
+    }
+
+    @media only screen and (max-width: 625px) {
+        .container {
+            .info {
+                margin-top: 300px;
+
+                h1 {
+                    font-size: 100px;
+
+                    span:last-child {
+                        margin-top: 90px;
+                        margin-left: -78px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 530px) {
+        .container {
+            .info {
+                h1 {
+                    font-size: 80px;
+
+                    span:last-child {
+                        margin-top: 75px;
+                        margin-left: -63px;
+                    }
+                }
+
+                button {
+                    padding: 16px 8px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 460px) {
+        .container {
+            .info {
+                margin-top: 250px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .container {
+            .info {
+                h1 {
+                    font-size: 60px;
+
+                    span:last-child {
+                        margin-top: 60px;
+                        margin-left: -45px;
+                    }
+                }
+            }
+        }
+    }
+}

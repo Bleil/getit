@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GETIT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="vendor/slick-slider/slick-theme.css" />
+    <link rel="stylesheet" media="all" href="vendor/slick-slider/slick.css" />
+    <link rel="stylesheet" media="all" href="styles.css" />
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+    <main>
+        <getit-navbar>
+            <header>
+                <div class="main-menus">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/desktop/getit_logo_black.png" alt="GETIT"></a>
+                        </li>
+                        <li><a href="#service">Serviço</a></li>
+                        <li><a href="#about-us">Sobre nós</a></li>
+                        <li><a href="#customers">Clientes</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="additional-menus">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Registre-se</a></li>
+                    </ul>
+                </div>
+            </header>
+        </getit-navbar>
+        <getit-navbar-mobile>
+            <header id="mobile-menu">
+                <a href="#"><img src="images/desktop/getit_logo_black.png" alt="GETIT"></a>
+                <button type="button" id="menu-button" onclick="GETIT.toggleMenu()"></button>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </header>
+        </getit-navbar-mobile>
+        <getit-main>
+            <section class="banner">
+                <h1>Automatizamos o processo de pagamento para uma solução mais eficiente</h1>
+                <button type="button" class="orange-button">Conheça</button>
+            </section>
+        </getit-main>
+        <getit-service>
+            <section id="service" class="container">
+                <div class="title">
+                    <h1>
+                        <span>Ser</span>
+                        <span>viço</span>
+                    </h1>
+                    <p>Vero odiciantur moditem quia voluptae et perum</p>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <figure>
+                            <img src="images/ico_Rapidez.svg" alt="Rapidez">
+                        </figure>
+                        <h3>Rapidez</h3>
+                        <p>De doluptatem accae. Otaquo modita volore, con prestioris sit, omnis con parum quis.</p>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/ico_Seguranca.svg" alt="Segurança">
+                        </figure>
+                        <h3>Segurança</h3>
+                        <p>De doluptatem accae. Otaquo modita volore, con prestioris sit, omnis con parum quis.</p>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="images/ico_Conciliacao.svg" alt="Conciliação">
+                        </figure>
+                        <h3>Conciliação Automática</h3>
+                        <p>De doluptatem accae. Otaquo modita volore, con prestioris sit, omnis con parum quis.</p>
+                    </div>
+                </div>
+                <div class="speak-with-us">
+                    <button type="button" class="orange-button">Fale Conosco</button>
+                </div>
+            </section>
+        </getit-service>
+        <getit-about-us>
+            <section id="about-us" class="container">
+                <div class="info">
+                    <h1><span>Sobre</span><span>Nós</span></h1>
+                    <p>De doluptatem accae. Otaquo modita volore, con prestioris sit, omnis con parum quis.Tia cumentius, ut
+                        reium si.</p>
+                    <p>volorero et doloreceat recusapel id molo eossitiandit facitiandis estiore, omnis eum incil mo mosseqIt
+                        et rehenih.</p>
+                    <button type="button" class="orange-button">Conheça-nos</button>
+                </div>
+            </section>
+        </getit-about-us>
+        <getit-customers>
+            <section id="customers" class="container">
+                <div class="title">
+                    <h1>
+                        <span>CLI</span>
+                        <span>EN</span>
+                        <span>TES</span>
+                        <hr>
+                    </h1>
+                </div>
+                <div class="customers">
+                    <div class="carousel-container">
+                        <button type="button" id="previous" class="previous"><img src="images/right_arrow.svg" alt="Cliente anterior"></button>
+                        <div class="carousel">
+                            <div class="item">
+                                <img src="images/desktop/warren_logo.jpg" alt="Warren">
+                            </div>
+                            <div class="item">
+                                <img src="images/desktop/warren_logo.jpg" alt="Warren">
+                            </div>
+                            <div class="item">
+                                <img src="images/desktop/warren_logo.jpg" alt="Warren">
+                            </div>
+                            <div class="item">
+                                <img src="images/desktop/warren_logo.jpg" alt="Warren">
+                            </div>
+                            <div class="item">
+                                <img src="images/desktop/warren_logo.jpg" alt="Warren">
+                            </div>
+                        </div>
+                        <button type="button" id="next" class="next"><img src="images/right_arrow.svg" alt="Próximo cliente"></button>
+                    </div>
+
+                </div>
+            </section>
+        </getit-customers>
+        <getit-contact>
+            <div id="contact" class="container">
+                <div class="title mobile">
+                    <h1>
+                        <span>CONTA</span>
+                        <span>TOS</span>
+                    </h1>
+                </div>
+                <div class="form-container">
+                    <form action="">
+                        <input type="text" placeholder="Nome Completo">
+                        <input type="text" placeholder="e-mail">
+                        <input type="text" placeholder="Telefone">
+                        <textarea cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                        <button type="button" class="orange-button">Enviar</button>
+                    </form>
+                </div>
+                <div class="infos">
+                    <div class="title">
+                        <h1>
+                            <span>CONTA</span>
+                            <span>TOS</span>
+                        </h1>
+                    </div>
+                    <div id="map" class="map"></div>
+                    <p>Endereço da Getit completo, 1000 - Porto Alegre-RS | CEP: 00000000</p>
+                    <p>Fone: (51)99999-9999</p>
+                    <p>email@email.com</p>
+                </div>
+            </div>
+            <div class="decoration">
+                <hr>
+            </div>
+        </getit-contact>
+        <getit-footer>
+            <footer>
+                <img src="images/mobile/logo_getit_white_small.png" alt="GETIT">
+                <p>Design por Aline Walendorf</p>
+            </footer>
+        </getit-footer>
+        <getit-backdrop id="backdrop"></getit-backdrop>  
+    </main>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="vendor/slick-slider/slick.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
