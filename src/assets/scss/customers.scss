@@ -156,12 +156,6 @@ getit-customers {
                     }
                 }
             }
-        }
-    }
-
-    @media only screen and (max-width: 678px) {
-        .container {
-            padding: 24px 16px;
 
             .customers {
                 .carousel-container {
@@ -175,7 +169,7 @@ getit-customers {
                         }
 
                         img {
-                            max-width: 80px;
+                            max-width: 60px;
                         }
                     }
 
@@ -184,14 +178,20 @@ getit-customers {
                             outline: none;
         
                             img {
-                                max-width: 250px;
-                                max-height: 250px;
+                                max-width: 170px;
+                                max-height: 170px;
                                 margin: 0 auto;
                             }
                         }
                     }
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: 678px) {
+        .container {
+            padding: 24px 16px;
         }
     }
 }

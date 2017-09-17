@@ -16,7 +16,7 @@ getit-main {
         justify-content: center;
         align-items: center;
 
-        h1 {
+        p {
             width: 100%;
             max-width: 900px;
             text-align: center;
@@ -30,18 +30,26 @@ getit-main {
         }
     }
 
+    @media only screen and (max-width: 975px) {
+        .banner {
+            padding: 100px 16px 50px 16px;
+            box-sizing: border-box;
+            height: auto;
+            max-height: none;
+            background-image: url('images/mobile/bg_main.jpg');
+
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+
     @media only screen and (max-width: 768px) {
         .banner {
             button {
                 width: calc(100% - 24px);
                 padding: 16px 8px;
             }
-        }
-    }
-
-    @media only screen and (max-width: 640px) {
-        .banner {
-            background-image: url('images/mobile/bg_main.jpg');
         }
     }
 }
