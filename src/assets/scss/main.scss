@@ -45,6 +45,10 @@ getit-main {
 
     @media only screen and (max-width: 768px) {
         .banner {
+            p {
+                margin-bottom: 24px;
+            }
+
             button {
                 width: calc(100% - 24px);
                 padding: 16px 8px;
