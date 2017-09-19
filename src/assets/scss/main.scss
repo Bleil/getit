@@ -31,10 +31,9 @@ getit-main {
 
     @media only screen and (max-width: 975px) {
         .banner {
-            padding: 100px 16px 50px 16px;
-            min-height: 100vh;
+            padding: 80px 16px 0 16px;
             box-sizing: border-box;
-            height: auto;
+            height: 100vh;
             max-height: none;
             background-image: url('images/mobile/bg_main.jpg');
 
