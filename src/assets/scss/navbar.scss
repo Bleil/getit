@@ -61,6 +61,13 @@ getit-navbar {
                         font-weight: $light;
                         color: $black;
                         font-size: 20px;
+                        transition: color 0.10s linear;
+                        will-change: color;
+
+                        &:hover {
+                            color: $orange;
+                            transition: color 0.15s linear;
+                        }
                     }
                 }
             }
